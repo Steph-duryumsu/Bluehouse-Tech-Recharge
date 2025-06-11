@@ -38,4 +38,4 @@ Clone the repo and install dependencies:
 git clone https://github.com/Steph-duryumsu/Bluehouse-Tech-Recharge
 cd devconnect
 npm install
-npm run dev
+npm start
