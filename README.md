@@ -35,7 +35,7 @@ wallet-balance-app/
 
 📌 Getting Started
 Clone the repo and install dependencies:
-git clone https://github.com/your-org/devconnect.git
+git clone https://github.com/Steph-duryumsu/Bluehouse-Tech-Recharge
 cd devconnect
 npm install
 npm run dev
