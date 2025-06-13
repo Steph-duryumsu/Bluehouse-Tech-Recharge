@@ -20,10 +20,13 @@ wallet-balance-app/
 │   │   ├── SignInPage.js
 │   │   └── SignUpPage.js
 │   ├── styles/         
-│   │   └── WelcomPage.js
-|       |── SignInPage.js
-|       |── SignupPage.js
-│
+│   │   └── WelcomPage.css
+|   |   |── SignInPage.css
+|   |  |── SignupPage.css
+│   |__Images/
+|       |__Image 1
+|       |__Image2......etc
+|
 ├── .gitignore
 ├── package.json
 ├── README.md
@@ -38,4 +41,4 @@ Clone the repo and install dependencies:
 git clone https://github.com/Steph-duryumsu/Bluehouse-Tech-Recharge
 cd devconnect
 npm install
-npm run dev
+npm start
