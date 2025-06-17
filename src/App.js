@@ -1,15 +1,23 @@
+// src/App.js
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+
 import SignInPage from './Pages/SignInPage';
+import SignUpPage from './Pages/SignUpPage';
+import WelcomePage from './Pages/Welcomepage';
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <Routes>
+        <Route path="/" element={<Navigate to="/welcome" replace />} />
+        <Route path="/welcome" element={<WelcomePage />} />
         <Route path="/signin" element={<SignInPage />} />
-        <Route path="/" element={<Navigate to="/signin" />} /> {/* Redirect root to signin */}
+        <Route path="/signup" element={<SignUpPage />} />
+        {/* add more routes here as needed */}
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 }
 
