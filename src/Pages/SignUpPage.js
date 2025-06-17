@@ -1,0 +1,1 @@
+ import signup from '../assets/signup.png';
