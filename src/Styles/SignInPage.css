@@ -1,0 +1,200 @@
+/* Container for the entire page */
+.signin-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+/* Box containing the sign-in form */
+.signin-box {
+  text-align: center;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Logo box - update the background color */
+.signin-logo-container {
+  background-color: #13866b; /* Matches the deep green look */
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column-reverse; /* Reverse the order: text above, icon below */
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 170px;
+  margin: 0 auto 20px auto;
+}
+
+/* Text inside the logo box */
+.signin-title {
+  color: #fff;
+  font-size: 20px; /* Increase font size for better visibility */
+  font-weight: bold; /* Make the text bold */
+  text-align: center;
+  line-height: 1.5; /* Adjust line height for spacing */
+  margin: 0; /* Remove unnecessary margins */
+}
+
+/* Heading for the sign-in box */
+.signin-heading {
+  font-size: 24px;
+  font-weight: bold;
+  color: #007b5e; /* Matches the theme color */
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.signin-title-line {
+  display: block; /* Ensure each line is treated as a block */
+}
+
+/* Logo icon inside the box */
+.signin-logo {
+  width: 55px;
+  height: 55px;
+  background: none; /* Remove white background */
+  margin-top: 35px;
+}
+
+/* Subtitle ("Welcome Back") */
+.signin-subtitle {
+  font-size: 20px;
+  margin: 10px 0 25px;
+  font-weight: 500;
+}
+
+/* Make entire form section cleaner */
+.signin-form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 15px;
+}
+
+/* Input fields */
+.signin-input {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #f5f5dc; /* Milk color */
+  margin-bottom: 20px;
+}
+
+/* Remember Me checkbox */
+.signin-remember {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #666;
+  font-size: 14px;
+  font-weight: bold; /* Make the text bold */
+  margin-bottom: 10px;
+}
+
+/* Radio box styling */
+.signin-checkbox {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%; /* Make it round */
+  appearance: none; /* Remove default checkbox styling */
+  border: 2px solid white; /* Add border */
+  background-color: #f5f5dc; /* White background */
+  cursor: pointer;
+}
+
+.signin-checkbox:checked {
+  background-color: #007b5e; /* Change background color when selected */
+}
+
+/* Sign In button */
+.signin-button {
+  padding: 10px 25px;
+  background-color: #007b5e;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.signin-button:hover {
+  background-color: #005a47;
+}
+
+/* Footer text */
+.signin-footer {
+  color: #666;
+  font-size: 14px;
+  margin-top: 15px;
+  text-align: left; /* Align text to the left */
+}
+
+/* Sign Up link */
+.signin-link {
+  color: #007b5e;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+/* Error message styling */
+.signin-error {
+  color: red;
+  font-size: 14px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  /* For laptops */
+  .signin-box {
+    padding: 20px;
+  }
+  .signin-logo-container {
+    width: 150px;
+    height: 150px;
+  }
+  .signin-title {
+    font-size: 14px;
+  }
+  .signin-logo {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 600px) {
+  /* For phones */
+  .signin-box {
+    padding: 15px;
+  }
+  .signin-logo-container {
+    width: 120px;
+    height: 120px;
+  }
+  .signin-title {
+    font-size: 12px;
+  }
+  .signin-logo {
+    width: 35px;
+    height: 35px;
+  }
+  .signin-input {
+    font-size: 12px;
+  }
+  .signin-button {
+    font-size: 12px;
+    padding: 8px 20px;
+  }
+}
