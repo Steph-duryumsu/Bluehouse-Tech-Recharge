@@ -17,7 +17,6 @@ function SignInPage() {
       setError("Please fill in all fields.");
       return;
     }
-
     // Simulate successful login
     setError(""); // Clear any previous errors
     navigate("/welcome"); // Navigate to the Welcome page
