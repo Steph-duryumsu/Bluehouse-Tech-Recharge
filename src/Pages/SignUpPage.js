@@ -93,7 +93,7 @@ function SignUpPage() {
           <p className="signin-footer">
             Already have an account?{" "}
             <Link to="/" className="welcome-link" style={{ color: "#13866b" }}>
-              Sign n
+              Sign In
             </Link>
           </p>
         </form>
