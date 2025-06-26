@@ -92,8 +92,8 @@ function SignUpPage() {
           </button>
           <p className="signin-footer">
             Already have an account?{" "}
-            <Link to="/welcome" className="welcome-link">
-              welcome
+            <Link to="/" className="welcome-link" style={{ color: "#13866b" }}>
+              Signin
             </Link>
           </p>
         </form>
