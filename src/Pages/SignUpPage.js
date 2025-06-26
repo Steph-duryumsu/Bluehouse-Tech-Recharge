@@ -92,8 +92,8 @@ function SignUpPage() {
           </button>
           <p className="signin-footer">
             Already have an account?{" "}
-            <Link to="/signup" className="welcome-link">
-              Signup
+            <Link to="/" className="welcome-link">
+              Signin
             </Link>
           </p>
         </form>
