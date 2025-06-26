@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom"; // Import useNavigate
-import "../Styles/SignUpPage.css"; // Correct path to CSS file
+import "../Styles/SignUpPage.css";
 import shieldIcon from "../Images/shield-icon.png"; // Ensure this path matches the actual location of the image
 
 function SignUpPage() {
@@ -21,7 +21,7 @@ function SignUpPage() {
       email === "" ||
       password === ""
     ) {
-      setError("Please fill in all fields.");
+      setError("Please fill in all fields required.");
       return;
     }
 
@@ -51,21 +51,21 @@ function SignUpPage() {
         <form className="signup-form" onSubmit={handleSubmit}>
           <input
             type="text"
-            placeholder="firstname"
+            placeholder="FirstName"
             className="signup-input"
             value={firstName}
             onChange={(e) => setFirstName(e.target.value)}
           />
           <input
             type="text"
-            placeholder="lastname"
+            placeholder="LastName"
             className="signup-input"
             value={lastName}
             onChange={(e) => setLastName(e.target.value)}
           />
           <input
             type="tel"
-            placeholder="mobile number"
+            placeholder="Mobile Number"
             className="signup-input"
             // You may want to add a state for mobile number as well
           />
@@ -92,7 +92,7 @@ function SignUpPage() {
           </button>
           <p className="signin-footer">
             Already have an account?{" "}
-            <Link to="/" className="welcome-link">
+            <Link to="/" className="welcome-link" style={{ color: "#13866b" }}>
               Signin
             </Link>
           </p>
